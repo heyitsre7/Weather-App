@@ -18,6 +18,9 @@ button.addEventListener("click" ,()=>{
         document.getElementById("humid").innerHTML = data.main.humidity;
         document.getElementById("status").innerHTML = data.weather[0].description;
 
-        console.log(data);
+        // console.log(data);
+    })
+    .catch(error =>{
+        console.log('There has been a problem with your fetch operation:',error);
     })
 })
