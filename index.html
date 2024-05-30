@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays weather in your city </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="weather_icon.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h2>Todays Forcast</h2>
+            <input type="text" id="city" placeholder="Your city">
+            <button type="button" id="btn">Get weather</button>
+            <div class="sub-contain">
+                <div class="weather">
+                    <div class="city">
+                        <p >Weather in <span id="in-city"></span> city </p>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png
+                        " alt="weather icon" id="icon">
+                    </div>
+                    <p >Sunrise <span id="sunrise"></span> AM</p>
+                    <p >Sunset <span id="sunset"></span> PM</p>
+                    <p >Temperature <span id="temp"></span> °C</p>
+                    <p >Pressure <span id="pressure"></span></p>
+                    <p >Wind Speed <span id="wind-speed"></span></p>
+                    <p >Humidity <span id="humid"></span></p>
+                    <p >Weather Status : <span id="status"></span></p>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

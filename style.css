@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://insidetowers.com/wp-content/uploads/2022/03/weatheristockphoto-531889697-612x612-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(240, 248, 255, 0.668);
+    text-align: center;
+}
