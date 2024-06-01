@@ -10,15 +10,17 @@ button.addEventListener("click" ,()=>{
     })
     .then((data)=>{
         document.getElementById("in-city").innerHTML =  data.name;
-        document.getElementById("sunrise").innerHTML = new Date(data.sys.sunrise * 1000).toLocaleTimeString();   
+        document.getElementById("sunrise").innerHTML = new Date(data.sys.sunrise * 1000 ).toLocaleTimeString();   
         document.getElementById("sunset").innerHTML = new Date (data.sys.sunset * 1000).toLocaleTimeString();
         document.getElementById("temp").innerHTML = data.main.temp;
-        document.getElementById("pressure").innerHTML = data.main.pressure;
+        document.getElementById("pressure").innerHTML = data.main.pressure ;
         document.getElementById("wind-speed").innerHTML = data.wind.speed;
         document.getElementById("humid").innerHTML = data.main.humidity;
         document.getElementById("status").innerHTML = data.weather[0].description;
+        document.getElementById("icon").src = `http://openweathermap.org/img/wn/${data.weather
+        [0].icon}@2x.png`;
 
-        // console.log(data);
+        console.log(data);
     })
     .catch(error =>{
         console.log('There has been a problem with your fetch operation:',error);
